@@ -1,0 +1,47 @@
+# Временные файлы
+.tmp.driveupload/
+*.tmp
+*.temp
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Логи
+*.log
+logs/*.log
+
+# Токены и конфиги с секретами
+tokens/
+*.token
+config_local.py
+.env
+.env.local
+
+# Данные
+data/*.json
+data/*.csv
+!data/.gitkeep
+
+# Отчеты (можно раскомментировать, если не нужно коммитить)
+# reports/*.md
+# reports/*.html
+
