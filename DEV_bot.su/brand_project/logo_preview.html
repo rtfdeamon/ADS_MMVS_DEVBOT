@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEV_bot Logo Preview</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+            width: 100%;
+        }
+        
+        h1 {
+            color: #0A2A4D;
+            margin-bottom: 40px;
+            text-align: center;
+            font-size: 28px;
+        }
+        
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .logo-wrapper {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .logo-wrapper.dark {
+            background: #0A2A4D;
+            padding: 30px;
+        }
+        
+        .logo-wrapper.light {
+            background: white;
+            border: 2px solid #e2e8f0;
+        }
+        
+        .color-palette {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .color-item {
+            text-align: center;
+        }
+        
+        .color-swatch {
+            width: 100%;
+            height: 80px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .color-name {
+            font-weight: 600;
+            color: #2D3748;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        
+        .color-code {
+            font-size: 12px;
+            color: #718096;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .info {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            border-left: 4px solid #00C4B3;
+        }
+        
+        .info h3 {
+            color: #0A2A4D;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .info p {
+            color: #4A5568;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>DEV_bot Logo Preview</h1>
+        
+        <div class="logo-container">
+            <div>
+                <h3 style="text-align: center; color: #2D3748; margin-bottom: 15px; font-size: 18px;">Полный логотип (горизонтальный)</h3>
+                <div class="logo-wrapper light">
+                    <img src="logo.svg" alt="DEV_bot Logo" style="max-width: 100%; height: auto;">
+                </div>
+            </div>
+            
+            <div>
+                <h3 style="text-align: center; color: #2D3748; margin-bottom: 15px; font-size: 18px;">Полный логотип на темном фоне</h3>
+                <div class="logo-wrapper dark">
+                    <img src="logo.svg" alt="DEV_bot Logo" style="max-width: 100%; height: auto; filter: brightness(1.1);">
+                </div>
+            </div>
+            
+            <div>
+                <h3 style="text-align: center; color: #2D3748; margin-bottom: 15px; font-size: 18px;">Компактная версия</h3>
+                <div class="logo-wrapper light">
+                    <img src="logo_compact.svg" alt="DEV_bot Compact Logo" style="max-width: 100%; height: auto;">
+                </div>
+            </div>
+            
+            <div>
+                <h3 style="text-align: center; color: #2D3748; margin-bottom: 15px; font-size: 18px;">Иконка (квадратная)</h3>
+                <div class="logo-wrapper light" style="display: flex; justify-content: center; align-items: center; width: 200px; height: 200px; margin: 0 auto;">
+                    <img src="logo_icon.svg" alt="DEV_bot Icon" style="max-width: 100%; height: auto;">
+                </div>
+            </div>
+        </div>
+        
+        <div class="color-palette">
+            <div class="color-item">
+                <div class="color-swatch" style="background-color: #0A2A4D;"></div>
+                <div class="color-name">DEV_bot Blue</div>
+                <div class="color-code">#0A2A4D</div>
+            </div>
+            <div class="color-item">
+                <div class="color-swatch" style="background-color: #2D3748;"></div>
+                <div class="color-name">DEV_bot Grey</div>
+                <div class="color-code">#2D3748</div>
+            </div>
+            <div class="color-item">
+                <div class="color-swatch" style="background-color: #00C4B3;"></div>
+                <div class="color-name">DEV_bot Turquoise</div>
+                <div class="color-code">#00C4B3</div>
+            </div>
+            <div class="color-item">
+                <div class="color-swatch" style="background-color: #4299E1;"></div>
+                <div class="color-name">DEV_bot Electric Blue</div>
+                <div class="color-code">#4299E1</div>
+            </div>
+        </div>
+        
+        <div class="info">
+            <h3>О логотипе</h3>
+            <p>
+                Логотип включает минималистичную иконку-робота слева с динамическим потоком данных, 
+                который преобразуется в стрелку роста. Буква "o" в слове "bot" стилизована как 
+                дружелюбный глаз-робот с сенсорами. Логотип отражает интеллектуальность, 
+                технологичность и динамику развития бизнеса.
+            </p>
+            <p style="margin-top: 15px;">
+                <strong>Доступные варианты:</strong><br>
+                • <strong>logo.svg</strong> — полный горизонтальный логотип (400×120px)<br>
+                • <strong>logo_compact.svg</strong> — компактная версия для узких мест (280×60px)<br>
+                • <strong>logo_icon.svg</strong> — квадратная иконка для соцсетей и фавиконов (120×120px)
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+

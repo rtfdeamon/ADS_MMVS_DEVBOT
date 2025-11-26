@@ -1,0 +1,140 @@
+<svg width="400" height="120" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Градиент для свечения -->
+    <linearGradient id="glowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4299E1;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#00C4B3;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Градиент для стрелки роста -->
+    <linearGradient id="arrowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00C4B3;stop-opacity:0.6" />
+      <stop offset="50%" style="stop-color:#00C4B3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4299E1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Иконка-робот (щит с сенсорами) -->
+  <g id="robot-icon">
+    <!-- Контур щита -->
+    <path d="M 20 30 L 20 50 L 35 60 L 50 50 L 50 30 L 35 20 Z" 
+          fill="none" 
+          stroke="#2D3748" 
+          stroke-width="2" 
+          opacity="0.3"/>
+    
+    <!-- Два сенсора (глаза) -->
+    <circle cx="30" cy="38" r="3" fill="#00C4B3" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="40" cy="38" r="3" fill="#00C4B3" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite" begin="0.1s"/>
+    </circle>
+    
+    <!-- Подсветка сенсоров -->
+    <circle cx="30" cy="38" r="1.5" fill="#4299E1" opacity="0.8"/>
+    <circle cx="40" cy="38" r="1.5" fill="#4299E1" opacity="0.8"/>
+    
+    <!-- Улыбка -->
+    <path d="M 28 45 Q 35 50 42 45" 
+          fill="none" 
+          stroke="#00C4B3" 
+          stroke-width="1.5" 
+          stroke-linecap="round"/>
+  </g>
+  
+  <!-- Динамический поток данных (три линии, сливающиеся в стрелку) -->
+  <g id="data-flow">
+    <!-- Три начальные линии из робота -->
+    <path d="M 25 55 Q 40 65 60 70" 
+          fill="none" 
+          stroke="url(#arrowGradient)" 
+          stroke-width="2" 
+          stroke-linecap="round"
+          opacity="0.7"/>
+    <path d="M 30 58 Q 45 68 65 72" 
+          fill="none" 
+          stroke="url(#arrowGradient)" 
+          stroke-width="2" 
+          stroke-linecap="round"
+          opacity="0.8"/>
+    <path d="M 35 60 Q 50 70 70 74" 
+          fill="none" 
+          stroke="url(#arrowGradient)" 
+          stroke-width="2" 
+          stroke-linecap="round"
+          opacity="0.9"/>
+    
+    <!-- Стрелка роста (слившиеся линии) -->
+    <path d="M 70 74 L 95 60 L 90 58 L 85 62 L 70 74 Z" 
+          fill="url(#glowGradient)"/>
+    <path d="M 70 74 L 95 60" 
+          stroke="#00C4B3" 
+          stroke-width="2.5" 
+          stroke-linecap="round"/>
+    
+    <!-- AI-импульс на стрелке -->
+    <circle cx="92" cy="59" r="2" fill="#4299E1" opacity="0.9">
+      <animate attributeName="r" values="2;3;2" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;0.5;0.9" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Текст DEV_bot -->
+  <g id="text">
+    <!-- DEV -->
+    <text x="110" y="50" 
+          font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" 
+          font-size="32" 
+          font-weight="700" 
+          fill="#0A2A4D" 
+          letter-spacing="-0.5">
+      DEV
+    </text>
+    
+    <!-- bot с особой буквой "o" -->
+    <text x="110" y="85" 
+          font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" 
+          font-size="32" 
+          font-weight="700" 
+          fill="#0A2A4D" 
+          letter-spacing="-0.5">
+      b
+    </text>
+    
+    <!-- Буква "o" как глаз-робот -->
+    <g id="bot-o">
+      <circle cx="155" cy="70" r="12" 
+              fill="none" 
+              stroke="#0A2A4D" 
+              stroke-width="3"/>
+      <!-- Два сенсора внутри "o" -->
+      <circle cx="150" cy="68" r="2" fill="#00C4B3">
+        <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="160" cy="68" r="2" fill="#00C4B3">
+        <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite" begin="0.1s"/>
+      </circle>
+      <!-- Подсветка -->
+      <circle cx="150" cy="68" r="1" fill="#4299E1" opacity="0.8"/>
+      <circle cx="160" cy="68" r="1" fill="#4299E1" opacity="0.8"/>
+      <!-- Улыбка -->
+      <path d="M 148 72 Q 155 75 162 72" 
+            fill="none" 
+            stroke="#00C4B3" 
+            stroke-width="1.5" 
+            stroke-linecap="round"/>
+    </g>
+    
+    <!-- t -->
+    <text x="175" y="85" 
+          font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" 
+          font-size="32" 
+          font-weight="700" 
+          fill="#0A2A4D" 
+          letter-spacing="-0.5">
+      t
+    </text>
+  </g>
+</svg>
+

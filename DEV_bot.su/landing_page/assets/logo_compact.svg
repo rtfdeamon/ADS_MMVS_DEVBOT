@@ -1,0 +1,114 @@
+<svg width="280" height="60" viewBox="0 0 280 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="compactGlowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4299E1;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#00C4B3;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="compactArrowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00C4B3;stop-opacity:0.6" />
+      <stop offset="50%" style="stop-color:#00C4B3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4299E1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Компактная иконка-робот -->
+  <g id="compact-robot">
+    <path d="M 5 10 L 5 25 L 15 30 L 25 25 L 25 10 L 15 5 Z" 
+          fill="none" 
+          stroke="#2D3748" 
+          stroke-width="1.5" 
+          opacity="0.3"/>
+    <circle cx="12" cy="16" r="2" fill="#00C4B3" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="18" cy="16" r="2" fill="#00C4B3" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite" begin="0.1s"/>
+    </circle>
+    <circle cx="12" cy="16" r="1" fill="#4299E1" opacity="0.8"/>
+    <circle cx="18" cy="16" r="1" fill="#4299E1" opacity="0.8"/>
+    <path d="M 10 21 Q 15 23 20 21" 
+          fill="none" 
+          stroke="#00C4B3" 
+          stroke-width="1.2" 
+          stroke-linecap="round"/>
+  </g>
+  
+  <!-- Компактный поток данных -->
+  <g id="compact-data-flow">
+    <path d="M 8 28 Q 18 33 30 35" 
+          fill="none" 
+          stroke="url(#compactArrowGradient)" 
+          stroke-width="1.8" 
+          stroke-linecap="round"
+          opacity="0.7"/>
+    <path d="M 12 30 Q 22 35 34 37" 
+          fill="none" 
+          stroke="url(#compactArrowGradient)" 
+          stroke-width="1.8" 
+          stroke-linecap="round"
+          opacity="0.8"/>
+    <path d="M 16 32 Q 26 37 38 39" 
+          fill="none" 
+          stroke="url(#compactArrowGradient)" 
+          stroke-width="1.8" 
+          stroke-linecap="round"
+          opacity="0.9"/>
+    <path d="M 38 39 L 50 32 L 47 30 L 44 33 L 38 39 Z" 
+          fill="url(#compactGlowGradient)"/>
+    <path d="M 38 39 L 50 32" 
+          stroke="#00C4B3" 
+          stroke-width="2" 
+          stroke-linecap="round"/>
+    <circle cx="48" cy="31" r="1.5" fill="#4299E1" opacity="0.9">
+      <animate attributeName="r" values="1.5;2;1.5" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Компактный текст -->
+  <g id="compact-text">
+    <text x="60" y="25" 
+          font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" 
+          font-size="20" 
+          font-weight="700" 
+          fill="#0A2A4D" 
+          letter-spacing="-0.3">
+      DEV
+    </text>
+    <text x="60" y="50" 
+          font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" 
+          font-size="20" 
+          font-weight="700" 
+          fill="#0A2A4D" 
+          letter-spacing="-0.3">
+      b
+    </text>
+    <g id="compact-bot-o">
+      <circle cx="100" cy="37" r="8" 
+              fill="none" 
+              stroke="#0A2A4D" 
+              stroke-width="2"/>
+      <circle cx="97" cy="35" r="1.5" fill="#00C4B3">
+        <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="103" cy="35" r="1.5" fill="#00C4B3">
+        <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite" begin="0.1s"/>
+      </circle>
+      <circle cx="97" cy="35" r="0.8" fill="#4299E1" opacity="0.8"/>
+      <circle cx="103" cy="35" r="0.8" fill="#4299E1" opacity="0.8"/>
+      <path d="M 95 39 Q 100 41 105 39" 
+            fill="none" 
+            stroke="#00C4B3" 
+            stroke-width="1.2" 
+            stroke-linecap="round"/>
+    </g>
+    <text x="115" y="50" 
+          font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" 
+          font-size="20" 
+          font-weight="700" 
+          fill="#0A2A4D" 
+          letter-spacing="-0.3">
+      t
+    </text>
+  </g>
+</svg>
